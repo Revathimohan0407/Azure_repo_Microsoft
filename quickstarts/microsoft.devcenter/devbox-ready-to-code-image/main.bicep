@@ -39,7 +39,7 @@ param imageBuildProfile object = {
 param isBaseImage bool = false
 
 @description('Timeout in minutes for the image build process')
-param imageBuildTimeoutInMinutes int = 180
+param imageBuildTimeoutInMinutes int = 240
 
 @description('Git repository containing artifacts to be used in the image build')
 param artifactSource types.artifactSource = {
@@ -52,8 +52,7 @@ param artifactSource types.artifactSource = {
 In the case of an error do not fail the deployment but rather return the tail of the customization log.
 Useful when debugging image build failures in PR validation pipelines (https://dev.azure.com/azurequickstarts/azure-quickstart-templates/_build).
 ''')
-// UNDONE: temporary set to 'true' while investigating build failures
-param ignoreBuildFailure bool = true
+param ignoreBuildFailure bool = false
 
 @description('Custom sample images configuration')
 param images types.images = {}

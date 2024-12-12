@@ -97,7 +97,7 @@ param osDriveMinSizeGB int = 160
 param imageBuildProfile object = {}
 
 @description('Timeout in minutes for the image build process')
-param imageBuildTimeoutInMinutes int = 180
+param imageBuildTimeoutInMinutes int = 240
 
 @description('Configuration of developer tools. See defaultDevTools for defaults.')
 param devTools object = {}
