@@ -61,7 +61,7 @@ param images types.images = {}
 var defaultImages = {
   eShop: {
     name: 'quickstart-eShop'
-    shouldBuild: false
+    shouldBuild: true
   }
   axios: {
     name: 'quickstart-axios'
@@ -69,7 +69,7 @@ var defaultImages = {
   }
   MSBuildSdks: {
     name: 'quickstart-MSBuildSdks'
-    shouldBuild: true
+    shouldBuild: false
   }
 }
 
